@@ -6,14 +6,14 @@
 /*   By: djin <djin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 20:37:13 by djin              #+#    #+#             */
-/*   Updated: 2023/04/10 12:45:48 by djin             ###   ########.fr       */
+/*   Updated: 2023/04/12 15:11:07 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 
 void	loop(int *nb, char	*arr, char	*n, long *i)
 {
-	while(*nb != 0)
+	while (*nb != 0)
 	{
 		*n = *nb % 10 + 48;
 		arr[*i] = *n;
@@ -27,7 +27,7 @@ void	loop(int *nb, char	*arr, char	*n, long *i)
 	}
 }
 
-void	ft_putnbr(int	nb)
+void	ft_putnbr(int nb)
 {
 	char	arr;
 	char	n;
@@ -37,7 +37,7 @@ void	ft_putnbr(int	nb)
 	if (nb == -2147483648)
 	{
 		write(1, "-2147483648", 11);
-		return	;
+		return ;
 	}
 	if (nb < 0)
 	{
@@ -47,13 +47,13 @@ void	ft_putnbr(int	nb)
 	if (nb == 0)
 	{
 		write(1, "0", 1);
-		return;
+		return ;
 	}
 	loop (&nb, &arr, &n, &i);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	ft_putnbr(-2147483648);
 	write(1, "\n", 1);
-}
+}*/

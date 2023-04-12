@@ -6,12 +6,12 @@
 /*   By: djin <djin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 20:28:22 by djin              #+#    #+#             */
-/*   Updated: 2023/04/09 20:36:43 by djin             ###   ########.fr       */
+/*   Updated: 2023/04/12 15:09:45 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
 
-void ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
 	int	i;
 
@@ -23,9 +23,9 @@ void ft_putstr(char *str)
 	}
 }
 
-int main(void)
+/*int main(void)
 {
 	char string[] = "Hello World";
 	
 	ft_putstr(string);
-}
+}*/

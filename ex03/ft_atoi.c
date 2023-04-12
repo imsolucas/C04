@@ -6,7 +6,7 @@
 /*   By: djin <djin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 11:11:13 by djin              #+#    #+#             */
-/*   Updated: 2023/04/10 12:51:07 by djin             ###   ########.fr       */
+/*   Updated: 2023/04/12 15:11:46 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <stdio.h>
@@ -15,8 +15,8 @@ int	ft_atoi(char *str)
 {
 	int	i;
 	int	result;
-	int counter;
-	int sign;
+	int	counter;
+	int	sign;
 
 	i = 0;
 	counter = 0;
@@ -40,10 +40,10 @@ int	ft_atoi(char *str)
 	return (result * sign);
 }
 
-int	main()
+/*int	main()
 {
 	char	string[] = "---+--+1234ab567";
 	
 	ft_atoi(string);
 	printf("%d\n", ft_atoi(string));
-}
+}*/
