@@ -6,7 +6,7 @@
 /*   By: djin <djin@42.fr>                          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/09 20:37:13 by djin              #+#    #+#             */
-/*   Updated: 2023/04/12 15:11:07 by djin             ###   ########.fr       */
+/*   Updated: 2023/04/12 21:54:25 by djin             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
@@ -52,8 +52,8 @@ void	ft_putnbr(int nb)
 	loop (&nb, &arr, &n, &i);
 }
 
-/*int	main(void)
+int	main(void)
 {
 	ft_putnbr(-2147483648);
 	write(1, "\n", 1);
-}*/
+}
