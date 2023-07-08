@@ -13,31 +13,31 @@
 
 int	ft_atoi(char *str)
 {
-	int	i;
+	int	count;
+	int	num;
 	int	result;
-	int	counter;
-	int	sign;
+	int	i;
 
 	i = 0;
-	counter = 0;
 	result = 0;
-	sign = 1;
+	count = 0;
+	num = 1;
 	while ((str[i] == ' ') || (str[i] >= 9 && str[i] <= 13))
-			i++;
-	while ((str[i] == '-') || (str[i] == '+'))
+		i++;
+	while (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
-			counter++;
+			count++;
 		i++;
 	}
-	if (counter % 2 != 0)
-		sign = -1;
+	if (count %2 != 0)
+		num = -1;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		result = (result * 10) + str[i] - 48;
+		result = (result * 10) + (str[i] - '0');
 		i++;
 	}
-	return (result * sign);
+	return (result * num);
 }
 
 int	main()
